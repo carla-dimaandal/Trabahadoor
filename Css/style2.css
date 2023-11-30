@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --primaryColor:#1282a2;
+    --blueColor:#1c2d45;
+    --whiteColor:#fff;
+    --blackColor:#333;
+    --textColor: #5A5A5A;
+
+}
+
+*, *:before, *:after{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+   font-family:'Poppins', sans-serif;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   backdrop-filter: blur(2px);
+}
+.big-wrapper{
+   width:100%;
+   min-height:100vh;
+   overflow:hidden;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-between;
+}
+.container{
+   position:relative;
+   max-width:100%;
+   width:100%;
+   margin:0 auto;
+   padding: 0 3rem 0.5rem;
+   z-index:10;
+   background-color:#f1f8fc;
+}
+header .container{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo{
+   display:flex;
+   align-items:center;
+   cursor: pointer;
+}
+.logo img{
+   width:40px;
+   margin-right:0.6rem;
+   margin-top:0.6rem;
+}
+.logo h3{
+   color:var(--primaryColor);
+   font-size: 1.55rem;
+   line-height:1.2;
+   font-weight:700;
+}
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+   
+ }
+ .selection{
+   border:2px solid rgba(6, 6, 6, 0.2);
+   box-shadow: 0 0 10px rgba(0,0,0,.2);
+   backdrop-filter:blur(100px);
+   width: 500px;
+   height:446.4px;
+   padding:3rem;
+   display:flex;
+   flex-direction:column;
+   justify-content: space-between;
+   align-items:center;
+   text-align: center;
+ }
+ .btn{
+   margin:auto;
+   display:inline-block;
+   padding: .9rem 1.9rem;
+   color: var(--whiteColor)!important;
+   background-color:var(--primaryColor);
+   border-radius: 10px;
+   text-transform:capitalize;
+   transition: .3s;
+   width:250px;
+}
+
+.btn:hover{
+   background-color:var(--blueColor);
+   transform: scale(1) !important;
+}
+
+.question{
+   font-size:2rem;
+   color:var(--primaryColor);
+   text-transform:uppercase;
+   line-height:1.4;
+   text-align:center;
+}
+ .form-container .welcome{
+   width:500px;
+   height:446.4px;
+ }
+ .form-container .welcome-reg{
+   width:500px;
+   height:446.4px;
+ }
+ .form-container .welcome-reg img{
+   width:500px;
+   height:446.4px;
+ }
+ .form-container .welcome img{
+   border:2px solid rgba(6, 6, 6, 0.2);
+   box-shadow: 0 0 10px rgba(0,0,0,.2);
+   backdrop-filter:blur(100px);
+   width: 500px;
+   height:446.4px;
+ }
+
+ @media (max-width: 958px){
+   .form-container .welcome{
+      display: none;
+   }
+   .form-container .welcome-reg{
+      display: none;
+   }
+}
+ .form-container form{
+    padding:20px;
+    padding-top:30px;
+    border:2px solid rgba(6, 6, 6, 0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    backdrop-filter:blur(100px);
+    text-align: center;
+    width: 500px;
+ }
+
+ .form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:var(--blueColor);
+ }
+ .input-box{
+   display:flex;
+   align-items:center;
+ }
+ .input-box img{
+   margin-left:1rem;
+   width:20px;
+   cursor:pointer;
+   position:absolute;
+   right:30px;
+ }
+ .form-container form input[type=password]{
+   width:100%;
+ }
+ .form-container form input,
+ .form-container form select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background: #eee;
+    border-radius: 5px;
+ }
+ 
+ .form-container form select option{
+    background: #fff;
+ }
+ 
+ .form-container form .form-btn{
+    background:var(--primaryColor);
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .form-container form .form-btn:hover{
+    background: var(--blueColor);
+    color:#fff;
+ }
+ 
+ .form-container form p{
+    margin-top: 10px;
+    font-size: 15px;
+    color:var(--primaryColor);
+ }
+
+ .form-container form .privacy{
+   margin-top:80px;
+   font-size:0.6rem;
+   color:var(--textColor);
+ }
+ 
+ .form-container form p a{
+    color:var(--blueColor);
+ }
+ 
+ .form-container form .error-msg{
+    display:flex;
+    text-align:left;
+    color:red;
+    font-size:0.6rem;
+ }
+ .admin-reg{
+   position:absolute;
+   bottom:8px;
+   right:15px;
+ }
+ form{
+   height:446.4px;
+ }
+  .admin-option{
+   color:var(--primaryColor);
+   font-size:0.6rem;
+   margin-top:-1rem;
+  }
+  .admin-option:hover{
+   color:var(--blueColor);
+  }
+ 
+
+  footer{
+   background-color: var(--blackColor);
+}
+.footerContainer{
+   width: 100%;
+   padding: 70px, 30px, 20px;
+}
+.socialIcons{
+   display: flex;
+   justify-content: center;
+}
+.socialIcons a{
+   text-decoration: none;
+   padding: 10px;
+   background-color:var(--whiteColor);
+   color: var(--blackColor);
+   margin: 10px;
+   border-radius: 50%;
+}
+.socialIcons a i{
+   font-size: 1.5em;
+   color: var(--blackColor);
+   opacity: 0.9;
+}
+.socialIcons a:hover{
+   background-color: #282727; 
+   transition: 0.5s;
+}
+.socialIcons a:hover i{
+   color:var(--whiteColor);
+   transition: 0.5s;
+}
+.footerNav{
+   margin: 30px 0;
+}
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   list-style-type: none;
+}
+.footerNav ul li a{
+   color: var(--whiteColor);
+   margin: 20px;
+   text-decoration: none;
+   font: 1em;
+   opacity: 0.7;
+   transition: 0.5s;
+}
+.footerNav ul li a:hover{
+   opacity: 1;
+   color:var(--whiteColor);
+   transform:scale(1.05);
+   transition:0.3s;
+}
+.footerNav ul li a:after{
+   content:"";
+   position:absolute;
+   background-color:var(--whiteColor);
+   width:0;
+   height:3px;
+   bottom:-10px;
+   left:0;
+}
+.footerNav ul li a:hover:after {
+   width: 100%;
+}
+.footerBottom{
+   background-color: black;
+   padding: 20px;
+   text-align: center;
+}
+.footerBottom p{
+   color: var(--whiteColor);
+}
+.footerName{
+   opacity: 0.7;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 400;
+   margin: 0px 5px;
+}
+
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   list-style-type: none;
+}
+
+.footerNav ul li a{
+   color: var(--whiteColor);
+   margin: 20px;
+   text-decoration: none;
+   font: 1em;
+   opacity: 0.7;
+   transition: 0.5s;
+   
+}
+
+.footerNav ul li a:hover{
+   opacity: 1;
+   color:var(--blueColor);
+   transform:scale(1.05);
+   transition:0.3s;
+}
+
+.footerNav ul li a:after{
+   content:"";
+   position:absolute;
+   background-color:var(--whiteColor);
+   width:0;
+   height:3px;
+   bottom:-10px;
+   left:0;
+ 
+}
+
+.footerNav ul li a:hover:after {
+   width: 100%;
+}
+
+.footerBottom{
+   background-color: black;
+   padding: 20px;
+   text-align: center;
+}
+
+.footerBottom p{
+   color: var(--whiteColor);
+}
+
+.footerName{
+   opacity: 0.7;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 400;
+   margin: 0px 5px;
+}
